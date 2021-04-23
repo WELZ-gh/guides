@@ -1,3 +1,6 @@
+The site needs to be located in the same directory as `DocumentRoot` from the `conf` file.<br>
+The best place to have the sites are in the `/var/www/` directory - one folder per site.
+___
 Navigate to the following directory
 ```
 /etc/apache2/sites-available
@@ -32,10 +35,8 @@ a2ensite sample.com.conf
 service apache2 restart
 ```
 ---
-The site needs to be located in the same directory as `DocumentRoot` from the `conf` file.<br>
-The best place to have the sites is in the `/var/www/` directory - one folder per site.
 ___
-Run the following command on the server
+Run the following command on the server to enable HTTPS
 ```
 certbot
 ```
